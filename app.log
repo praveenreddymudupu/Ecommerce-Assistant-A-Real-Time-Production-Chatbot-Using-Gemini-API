@@ -1,0 +1,18 @@
+2026-02-18 17:51:46,212 - ERROR - Gemini API Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-18 17:52:01,288 - ERROR - Gemini API Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-18 17:55:07,760 - ERROR - Gemini API Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-18 18:13:46,619 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 18:13:47,133 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-02-18 18:13:47,135 - ERROR - Gemini API Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-02-18 18:15:25,979 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 18:15:26,359 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash':generateContent "HTTP/1.1 400 Bad Request"
+2026-02-18 18:15:26,361 - ERROR - Gemini API Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\n', 'status': 'INVALID_ARGUMENT'}}
+2026-02-18 18:16:55,549 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 18:16:55,719 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash':generateContent "HTTP/1.1 400 Bad Request"
+2026-02-18 18:16:55,721 - ERROR - Gemini API Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\n', 'status': 'INVALID_ARGUMENT'}}
+2026-02-18 18:18:34,771 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 18:18:34,974 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash':generateContent "HTTP/1.1 400 Bad Request"
+2026-02-18 18:18:34,976 - ERROR - Gemini API Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.model: unexpected model name format\n', 'status': 'INVALID_ARGUMENT'}}
+2026-02-18 18:22:05,069 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 18:23:53,410 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 18:23:54,455 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
