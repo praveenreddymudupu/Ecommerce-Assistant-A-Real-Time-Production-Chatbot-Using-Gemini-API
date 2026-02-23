@@ -19,45 +19,68 @@ A Real-Time Production E-Commerce Chatbot using Gemini API
 
 # Tech Stack
 **Frontend/UI:** Streamlit
+
 **LLM:** Google Gemini API
+
 **Backend:** Python
+
 **Cloud Deployment:** AWS EC2
+
 **Environment Management:** python-dotenv
+
 **Version Control:** Git & GitHub
 
 # System Architecture
 
 User
+
   ↓
 Streamlit UI
+
   ↓
 Backend Service Layer
+
   ↓
 Prompt Engineering Module
+
   ↓
 Gemini API
+
   ↓
 Response Processing
+
   ↓
 UI Rendering
 
 # Project Structure
 
 ecommerce-genai-chatbot/
+
 │
 ├── app.py
+
 ├── requirements.txt
+
 ├── README.md
+
 ├── .env
+
 │
 ├── backend/
+
 │   ├── gemini_client.py
+
 │   ├── prompt_manager.py
+
 │   ├── memory_manager.py
+
 │   └── product_context.py
+
 │
 ├── utils/
+
 │   └── logger.py
+
 │
 └── logs/
 
@@ -88,16 +111,22 @@ http://localhost:8501
 **1.Launch EC2 Instance:**
 Ubuntu
 Open port 8501 in Security Group
+
 **2.Upload Project:**
 scp -r -i "your-key.pem" ecommerce-genai-chatbot ubuntu@your-ec2-ip:~
+
 **3.SSH into EC2:**
 ssh -i "your-key.pem" ubuntu@your-ec2-ip
+
 **4.Install Dependencies:**
 pip install -r requirements.txt
+
 **5.Set Environment Variable:**
 export GEMINI_API_KEY="your_api_key"
+
 **6.Run in Background:**
 nohup streamlit run app.py --server.port 8501 --server.address 0.0.0.0 &
+
 **Access:**
 http://your-ec2-ip:8501
 
