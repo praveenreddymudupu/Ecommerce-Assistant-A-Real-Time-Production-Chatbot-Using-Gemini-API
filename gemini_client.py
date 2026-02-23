@@ -1,5 +1,5 @@
 import os
-from google import genai
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -24,3 +24,4 @@ class GeminiClient:
 
         except Exception as e:
             return f"⚠️ Technical Error: {str(e)}"
+
