@@ -58,8 +58,11 @@ ecommerce-genai-chatbot/
 
 │
 ├── app.py
+
 ├── requirements.txt
+
 ├── README.md
+
 ├── .env
 
 │
