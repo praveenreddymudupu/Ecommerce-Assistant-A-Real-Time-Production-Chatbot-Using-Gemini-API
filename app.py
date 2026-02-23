@@ -1,7 +1,7 @@
 import streamlit as st
-from backend.gemini_client import GeminiClient
-from backend.memory_manager import *
-from backend.prompt_manager import build_prompt
+from gemini_client import GeminiClient
+from memory_manager import *
+from prompt_manager import build_prompt
 
 st.set_page_config(page_title="E-Commerce Assistant", layout="wide")
 
@@ -33,3 +33,4 @@ with st.sidebar:
     🔁 7-day return policy  
     💳 Secure payments  
     """)
+
