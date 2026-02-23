@@ -1,4 +1,4 @@
-from backend.product_context import STORE_POLICIES
+from product_context import STORE_POLICIES
 
 def build_prompt(user_input, history):
 
@@ -52,3 +52,4 @@ User: {user_input}
 Assistant:
 """
     return final_prompt
+
