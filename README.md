@@ -58,29 +58,18 @@ ecommerce-genai-chatbot/
 
 │
 ├── app.py
-
 ├── requirements.txt
-
 ├── README.md
-
 ├── .env
-
 │
 ├── backend/
-
 │   ├── gemini_client.py
-
 │   ├── prompt_manager.py
-
 │   ├── memory_manager.py
-
 │   └── product_context.py
-
 │
 ├── utils/
-
 │   └── logger.py
-
 │
 └── logs/
 
