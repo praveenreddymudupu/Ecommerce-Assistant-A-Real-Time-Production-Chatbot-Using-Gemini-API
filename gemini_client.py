@@ -11,17 +11,9 @@ class GeminiClient:
         if not api_key:
             raise ValueError("GEMINI_API_KEY not found.")
 
-        self.client = genai.Client(api_key=api_key)
+        genai.configure(api_key=api_key)
+        self.model = genai.GenerativeModel("gemini-pro")
 
     def generate(self, prompt):
-        try:
-            response = self.client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=prompt
-            )
-
-            return response.text
-
-        except Exception as e:
-            return f"⚠️ Technical Error: {str(e)}"
-
+        response = self.model.generate_content(prompt)
+        return response.text
